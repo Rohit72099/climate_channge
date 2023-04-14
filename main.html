@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CLIMATE CHANGE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+          }
+          
+          body {
+            --main-color: #24a211;
+            --primry-color: #020202;
+            --button-background: #155009;
+            --primary-button-background: #236120;
+            --background-color: #f0f7ff;
+          }
+          
+          h1,
+          h2 {
+            font-family: Avenir LT Std;
+            color: var(--main-color);
+          }
+          
+          h4,
+          h3 {
+            font-family: "muli";
+            color: var(--main-color);
+          }
+          
+          h3 {
+            font-weight: 750;
+            font-size: 2.2rem;
+            line-height: 6rem;
+            text-transform: capitalize;
+          }
+          
+          p,
+          a,
+          li,
+          button {
+            font-family: "muli";
+            color: var(--primry-color);
+          }
+          
+          p {
+            font-size: 1.8rem;
+            line-height: 150%;
+            font-style: normal;
+            font-weight: normal;
+          }
+          
+          a {
+            text-decoration: none;
+            cursor: pointer;
+          }
+          
+          li {
+            list-style: none;
+          }
+          
+          button {
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            border: none;
+            outline: none;
+            line-height: 3.6rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2rem;
+          }
+          
+          /* -------------------------------------- our menu style 
+          --------------------------------------------------------------------------- */
+          header {
+            padding: 0 20rem;
+          }
+          
+          header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12rem;
+          }
+          
+          header nav .left-side-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            /* background-color: #e2efff; */
+          }
+          
+          header nav .left-side-menu a img {
+            width: 15rem;
+            height: 15rem;
+          }
+          
+          header nav .left-side-menu .sub-menu {
+            height: inherit;
+            display: flex;
+            position: relative;
+            z-index: 99;
+          }
+          
+          header nav .left-side-menu .sub-menu a {
+            margin-right: 5.5rem;
+          }
+          
+          header nav .left-side-menu .sub-menu a li {
+            font-size: 2rem;
+            line-height: 3.6rem;
+            text-transform: capitalize;
+            transition: all 0.2s;
+          }
+          
+          header nav .left-side-menu .sub-menu a li:hover {
+            color: var(--button-background);
+          }
+          
+          /* right side menu css style  */
+          
+          header .right-side-menu {
+            width: 50%;
+            background-image: url("climate1.jpg");
+
+            display: flex;
+            justify-content: end;
+          }
+          
+          header .right-side-menu .sub-menu {
+            width: 100%;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+          
+          header .right-side-menu .sub-menu a {
+            margin-right: 8rem;
+            padding: 0.7rem 2rem;
+            background: rgba(129, 211, 238, 0.5);
+            font-size: 2rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            position: relative;
+            z-index: 9;
+          }
+          
+          header .right-side-menu .sub-menu button {
+            padding: 0.5rem 2.5rem;
+            background-color: var(--button-background);
+            color: #fff;
+            position: relative;
+            z-index: 9;
+          }
+          
+          header .right-side-menu .sub-menu button:hover {
+            background: #238c0b;
+          }
+          
+          header .right-side-menu .sub-menu a li:hover {
+            color: var(--button-background);
+          }
+          
+          /* -------------------------------------- our hero css style 
+          --------------------------------------------------------------------------- */
+          .main-hero-section {
+            padding: 0 20rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10rem;
+          }
+          
+          .main-hero-section .hero-left-side {
+            width: 50%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          
+          .main-hero-section h1 {
+            width: 55rem;
+            font-size: 6rem;
+            line-height: 9rem;
+            margin-bottom: 5rem;
+            text-transform: capitalize;
+          }
+          
+          .main-hero-section p {
+            margin-bottom: 8rem;
+            width: 45rem;
+          }
+          
+          .main-hero-section a img {
+            width: 13.5rem;
+            height: 4rem;
+          }
+          
+          .main-hero-section .button-group .appStore {
+            height: 4.3rem;
+            margin-bottom: -0.4rem;
+          }
+          
+          .main-hero-section .button-group a:first-child {
+            margin-right: 2.5rem;
+          }
+          
+          /* ------------------- our hero right side css style 
+          ------------------------------------ */
+          .main-hero-section .hero-right-side {
+            width: 50%;
+            height: 100vh;
+            /* background: var(--background-color); */
+            background-image: url("climate1111.jpg");
+            position: center;
+            right: 100px;
+            top: 90px;
+            height: 500px;
+            border-radius: 90px 20px 0px 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .main-hero-section .hero-right-side img {
+            width: 100rem;
+            height: 90rem;
+            margin-right: 20rem;
+          }
+          
+          /* ------------------- our 2nd section left side css style 
+          ------------------------------------ */
+          
+          .common-section {
+            width: 100%;
+            height: 70rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 9rem;
+            padding: 0 20rem;
+          }
+          
+          .common-section .left-side {
+            width: inherit;
+            height: inherit;
+          }
+          
+          .common-section .left-side figure {
+            width: 30rem;
+            height: 65rem;
+            background: #f3f9ff;
+            border-radius: 20px;
+          }
+          
+          .common-section .left-side img {
+            width: 100rem;
+            height: 60rem;
+            margin-top: 3.5rem;
+          }
+          
+          /* ------------------- our 2nd section right side css style 
+          ------------------------------------ */
+          
+          .common-section .right-side {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          
+          .common-section .right-side h2 {
+            width: 40rem;
+            font-style: normal;
+            font-size: 5.5rem;
+            font-weight: bold;
+            line-height: 6.3rem;
+            margin-bottom: 3rem;
+            text-transform: capitalize;
+          }
+          
+          .common-section .right-side p {
+            width: 40.3rem;
+            height: 10rem;
+            margin-bottom: 3rem;
+          }
+          
+          .common-section .right-side .common-button {
+            padding: 1rem 3rem;
+            background-color: var(--primary-button-background);
+            margin-right: 2rem;
+            color: #fff;
+            margin-top: 30rem;
+          }
+          
+          .common-section .right-side button:last-child {
+            color: var(--main-color);
+            background-color: transparent;
+          }
+          
+          .common-section .right-side .common-button:hover {
+            background: #0e842f;
+          }
+          
+          .common-section .right-side .common-button-normal:hover {
+            background: var(--primary-button-background);
+            color: #f0f7ff;
+          }
+          
+          /* ------------------- our 3rd section  css style 
+          ------------------------------------ */
+          
+          .section-third {
+            width: 100%;
+            height: 70rem;
+            background: var(--background-color);
+            padding: 3rem 20rem;
+          }
+          
+          .section-third h2 {
+            font-size: 5.5rem;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+            text-align: center;
+          }
+          
+          .section-third p {
+            width: 40rem;
+            height: 9rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            margin: auto;
+          }
+          
+          .section-third .section-third-task {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 4rem;
+          }
+          
+          .section-third .section-third-task .task-1,
+          .section-third .section-third-task .task-2,
+          .section-third .section-third-task .task-3 {
+            padding-top: 2rem;
+            /* background: cornsilk; */
+            text-align: center;
+            transition: all 0.3s linear;
+            border-radius: 2rem;
+          }
+          
+          .section-third .section-third-task .task-1 h3,
+          .section-third .section-third-task .task-2 h3,
+          .section-third .section-third-task .task-3 h3 {
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            margin-top: 2rem;
+          }
+          
+          .section-third .section-third-task .task-1 img,
+          .section-third .section-third-task .task-2 img,
+          .section-third .section-third-task .task-3 img {
+            width: 15rem;
+            height: 15rem;
+            transition: all 0.3s;
+          }
+          
+          .section-third .section-third-task .task-1 img,
+          .section-third .section-third-task .task-2 img {
+            height: 16rem;
+          }
+          
+          .section-third .section-third-task .task-3 {
+            background: #fff;
+            box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+          }
+          
+          .section-third .section-third-task .task-1:hover,
+          .section-third .section-third-task .task-2:hover {
+            background: #fff;
+            box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+          }
+          
+          .section-third .section-third-task .task-1:hover > img,
+          .section-third .section-third-task .task-2:hover > img,
+          .section-third .section-third-task .task-3:hover > img {
+            transform: rotate(360deg);
+          }
+          
+          /* ------------------- our 4th section  css style 
+          ------------------------------------ */
+          
+          #section-four .right-side h2 {
+            width: 50rem;
+          }
+          
+          #section-four .left-side img {
+            width: 55rem;
+            height: 75rem;
+            margin: 0;
+          
+          }
+          /* .left-side-menu{
+            background-color: #fff;
+          } */
+          /* ------------------- our 5th section  css style 
+          ------------------------------------ */
+          
+          #section-five .left-side img {
+            height: inherit;
+            width: 50rem;
+          }
+          
+          #section-five .right-side {
+            justify-content: flex-start;
+            padding-top: 5rem;
+          }
+          
+          #section-five .right-side h2 {
+            width: 63rem;
+            font-weight: 900;
+            font-size: 4rem;
+            line-height: 6.3rem;
+          }
+          
+          #section-five .right-side h3 {
+            text-transform: none;
+          }
+          
+          #section-five .right-side p {
+            height: 3rem;
+            
+            margin-bottom: 10rem;
+          }
+          
+          #section-five .right-side div {
+            margin-bottom: 5rem;
+          }
+          
+          .fa-heart {
+            color: #f75d5d;
+          }
+          
+          /* ------------------- our 6th section Footer css style 
+          ------------------------------------ */
+          
+          footer {
+            width: 100%;
+            background: var(--background-color);
+            height: auto;
+            padding: 5rem 20rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          
+          footer img {
+            width: 15rem;
+            height: 12rem;
+          }
+          
+          footer .footer-menu {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+          
+          footer div h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+          }
+          
+          footer div a {
+            font-size: 1.7rem;
+            line-height: 150%;
+          }
+          
+          footer .footer-div-5 a {
+            font-size: 1.5rem;
+          }
+          
+          /* ------------------- our 7th section social media css style 
+          ------------------------------------ */
+          
+          .icon-bar {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+          }
+          
+          .icon-bar a {
+            width: 18rem;
+            background: #3b5999;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.7rem;
+            padding: 0.5rem;
+            transition: all 0.5s linear;
+            transform: translateX(-14.5rem);
+          }
+          
+          .icon-bar a:hover {
+            transform: translateX(0);
+          }
+          
+          .icon-bar a .fab {
+            padding-left: 1rem;
+            font-size: 3rem;
+            animation: letszoom 3s linear alternate-reverse infinite;
+          }
+          
+          @keyframes letszoom {
+            from {
+              transform: scale(0.6);
+            }
+            to {
+              transform: scale(0.9);
+            }
+          }
+          
+          .icon-bar .twitter {
+            background: #00aced;
+          }
+          
+          .icon-bar .instagram {
+            background: #e4405f;
+          }
+          
+          .icon-bar .youtube {
+            background: #cd201f;
+          }
+          
+          .icon-bar .linkedin {
+            background: #0077b5;
+          }
+          
+          /* ----------------------------responsive website layout start 
+           ---------------------------*/
+          
+          @media (max-width: 1620px) {
+            header,
+            .main-hero-section,
+            .common-section {
+              padding: 0 12rem;
+            }
+          
+            .main-hero-section .hero-right-side img {
+              width: 95rem;
+              height: 95rem;
+              margin-right: 30rem;
+            }
+          }
+          
+          /* laptop devices  */
+          @media (max-width: 1280px) {
+            header,
+            .main-hero-section,
+            .common-section {
+              padding: 0 10rem;
+            }
+            html {
+              font-size: 50%;
+            }
+          
+            .main-hero-section .hero-right-side img {
+              width: 80rem;
+              height: 80rem;
+          
+              margin-right: 28rem;
+              margin-top: 5rem;
+            }
+          }
+          
+          /* tablet mode css style   */
+          @media (max-width: 980px) {
+            header,
+            .main-hero-section,
+            .common-section,
+            .section-third {
+              padding: 0 8rem;
+            }
+          
+            .main-hero-section .hero-right-side {
+              width: 90%;
+              position: center;
+              background: transparent;
+              /* background-image: url("pollutedsoil1.jpg"); */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          
+            .main-hero-section .hero-right-side img {
+              width: 60rem;
+              height: 60rem;
+              /* margin-left: -11rem; */
+              margin-right: 0;
+              margin-top: 5rem;
+            }
+          
+            .common-section {
+              width: 100%;
+              height: auto;
+              display: grid;
+              grid-template-columns: 1fr;
+            }
+          
+            .common-section .left-side figure {
+              height: 55rem;
+            }
+          
+            .common-section .left-side figure img {
+              height: 50rem;
+              margin-left: 5rem;
+              width: 35rem;
+            }
+          
+            .common-section .right-side {
+              margin-top: 6rem;
+              justify-content: start;
+              height: auto;
+            }
+          
+            .common-section .right-side h2 {
+              font-size: 4.5rem;
+              width: 35rem;
+            }
+          
+            /* section 3 style  */
+            .section-third {
+              height: auto;
+              padding: 0 5rem;
+              padding-bottom: 5rem;
+            }
+          
+            .section-third h2 {
+              width: auto;
+              padding: 0 1rem;
+              font-size: 4.5rem;
+              line-height: 6rem;
+              padding-top: 5rem;
+            }
+          
+            .section-third .section-third-task {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-column-gap: 4rem;
+              padding: 0;
+            }
+          
+            .section-third .section-third-task .task-1 img,
+            .section-third .section-third-task .task-2 img,
+            .section-third .section-third-task .task-3 img {
+              width: 20rem;
+              height: 20rem;
+            }
+          
+            .section-third .section-third-task .task-2 {
+              margin: 2rem 0;
+            }
+          
+            /* section 4 style  */
+          
+            #section-four .right-side {
+              order: 2;
+            }
+          
+            #section-four .right-side h2 {
+              width: 40rem;
+            }
+          
+            #section-four .left-side img {
+              height: 40rem;
+              width: 40rem;
+              margin-top: 5rem;
+            }
+          
+            /* section 5 style  */
+          
+            #section-five .right-side {
+              order: 2;
+            }
+          
+            #section-five .right-side h2 {
+              width: 40rem;
+              font-size: 3.5rem;
+              line-height: 4.2rem;
+            }
+          
+            #section-five .left-side img {
+              height: 38rem;
+              width: 38rem;
+              margin-top: 5rem;
+            }
+          
+            /* section 6 style  */
+            footer {
+              width: 100%;
+              padding: 3rem 5rem;
+              display: grid;
+              grid-template-columns: none;
+            }
+          
+            footer .footer-menu {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+          
+            footer .footer-menu h4 {
+              font-size: 1.5rem;
+            }
+          
+            /* icons bar  */
+            .icon-bar {
+              top: 35%;
+            }
+          }
+          
+          /* mobile devices */
+          @media (max-width: 770px) {
+            header,
+            .main-hero-section,
+            .common-section {
+              padding: 0 5rem;
+            }
+          
+            header nav {
+              padding-top: 1rem;
+              display: flex;
+              flex-flow: column;
+              align-items: flex-start;
+            }
+          
+            header nav .left-side-menu {
+              width: 100%;
+              display: block;
+              order: 2;
+            }
+          
+            header nav .left-side-menu img {
+              display: block;
+              width: 100%;
+            }
+          
+            header .left-side-menu .sub-menu {
+              width: 100%;
+              display: block;
+            }
+          
+            header nav .left-side-menu .sub-menu a {
+              margin-right: 2rem;
+            }
+          
+            header nav .left-side-menu .sub-menu a li {
+              font-size: 1.7rem;
+            }
+          
+            header nav .right-side-menu {
+              width: 100%;
+              order: 1;
+            }
+          
+            header nav .right-side-menu .sub-menu a {
+              width: 10rem;
+              height: 3.5rem;
+              border: 0.1rem solid var(--main-color);
+              border-radius: 2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 1rem;
+            }
+          
+            header nav .right-side-menu .sub-menu a li {
+              font-size: 1.5rem;
+              margin-right: 0;
+              text-transform: uppercase;
+            }
+          
+            header nav .right-side-menu .sub-menu button {
+              width: 13rem;
+              font-size: 1.5rem;
+              text-transform: uppercase;
+            }
+          
+            /* hero section css style  */
+            .main-hero-section {
+              width: 100%;
+              height: 80vh;
+              display: flex;
+              flex-flow: column;
+            }
+          
+            .main-hero-section .hero-left-side {
+              order: 2;
+              width: 100%;
+            }
+          
+            .main-hero-section .hero-left-side h1 {
+              width: 35rem;
+              font-size: 5rem;
+              line-height: 6rem;
+              margin-bottom: 2rem;
+            }
+          
+            .main-hero-section .hero-left-side p {
+              width: 35rem;
+              font-size: 2rem;
+              margin-bottom: 5rem;
+            }
+          
+            .main-hero-section .hero-right-side {
+              order: 1;
+              /* width: 100%; */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              background: transparent;
+            }
+          
+            .main-hero-section .hero-right-side img {
+              width: 35rem;
+              height: 35rem;
+              margin: 0;
+              margin-top: 4rem;
+            }
+          }
+          .header{
+            background-color: #491bec;
+          }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- left side menu  -->
+        <div class="left-side-menu">
+          <div class="logo">
+            <a href="#">
+              <img src="logocli.png" alt="" style="height: 80px;width: 80px;top: 0px;" />
+            </a>
+          </div>
+
+          <div class="sub-menu">
+            <a href="#">
+                <li>         </li>
+              </a>
+
+            <a href="#">
+                <li>         </li>
+              </a>
+
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+                <li>      </li>
+              </a>
+            <a href="#section-two">
+              <li>Causes</li>
+            </a>
+            <a href="#">
+                <li>     </li>
+              </a>
+            <a href="#section-third">
+              <li>Preventive measures</li>
+            </a>
+            <a href="#">
+                <li>      </li>
+              </a>
+            <a href="#section-four">
+              <li>Resources</li></a>
+              <a href="#">
+                <li>     </li>
+              </a>
+              <a href="#section-five">
+                <li>Latest Update</li></a>
+                <a href="#">
+                    <li>     </li>
+                  </a>
+                <!-- <a href="#">
+                    <li>Contact</li></a>
+            </a> -->
+          </div>
+        </div>
+
+        <!-- right side menu  -->
+        <div class="right-side-menu">
+          <div class="sub-menu" style="background-image: url(mutate.jpeg);">
+            <!-- <a href="#">
+               <li>Log In</li> -->
+            <!-- </a> 
+             <button>sign up</button> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="main-hero-section">
+      <!-- left side code   -->
+
+      <div class="hero-left-side">
+       
+
+        <h1><br>
+            
+            <br>Climate Change</h1>
+        <p>
+          Climate change refers to the long-term alteration of Earth's climate and weather patterns, which is primarily caused by human activities that release large amounts of greenhouse gases (such as carbon dioxide, methane, and nitrous oxide) into the atmosphere. These greenhouse gases trap heat from the sun and cause the planet to warm up, leading to a range of environmental impacts such as sea level rise, more frequent and severe weather events, and changes in precipitation patterns.The effects of climate change can be seen all over the world, from melting ice caps in the Arctic to more intense heatwaves and droughts in many regions. The consequences of these changes can be severe, including food and water shortages, displacement of people from their homes, and increased risks of wildfires, floods, and other natural disasters.
+        </p>
+        <div class="button-group">
+          <!-- <a href="#">
+            <img
+              src="abc"
+              
+              class="appStore"
+            />
+          </a>
+          <a href="#">
+            <img src="abc"  />
+          </a> -->
+        </div>
+      </div>
+      <!-- right side code   -->
+      <div class="hero-right-side">
+       <!-- <img src="abc" alt="heropageImg" />-->
+      </div>
+    </section>
+    
+
+    <section class="common-section" id="section-two">
+      <!-- left side of section 2  -->
+      <div class="left-side">
+        <figure style="background-image: url(climatecauses.png);width: 500px;height: 500px;">
+          <!-- <img src="logo.png" alt="section2" /> -->
+          
+        </figure>
+      </div>
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <figure>
+        <h2>CAUSES</h2>
+        <p>
+          Burning fossil fuels, cutting down forests and farming livestock are increasingly influencing the climate and the earth’s temperature.
+
+          This adds enormous amounts of greenhouse gases to those naturally occurring in the atmosphere, increasing the greenhouse effect and global warming.
+          2011-2020 was the warmest decade recorded, with global average temperature reaching 1.1°C above pre-industrial levels in 2019. Human-induced global warming is presently increasing at a rate of 0.2°C per decade.
+
+An increase of 2°C compared to the temperature in pre-industrial times is associated with serious negative impacts on to the natural environment and human health and wellbeing, including a much higher risk that dangerous and possibly catastrophic changes in the global environment will occur.
+
+<!--For this reason, the international community has recognised the need to keep warming well below 2°C and pursue efforts to limit it to 1.5°C.  -->
+
+  <br>
+<br>
+</p>
+
+            <br>
+        <div class="button-group">
+          <button id="abcd" class="common-button" onclick="abc">Read More..</button>
+          <button id="abcd1" class="common-button-normal" onclick="abc">Consequenses</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-third" id="section-third">
+      <h2>Preventive measures</h2>
+      <p style="font-size: 15px;">
+        Preventive measures for climate change involve reducing greenhouse gas emissions and taking steps to mitigate the effects of climate change. To reduce carbon emissions, cleaner sources of energy such as solar or wind power can be used.   </p>
+      <div class="section-third-task">
+        <div class="task-1">
+          <img src="proper1.jpg" alt="icon1" />
+          <h3>Proper waste management</h3>
+          <p>
+            Proper waste management is an essential component of efforts to mitigate climate change. When waste is not managed properly, it can release greenhouse gases such as methane, which contributes to global warming.          </p>
+        </div>
+
+        <div class="task-2">
+          <img src="ind1.jpg" alt="icon1" />
+          <h3>Proper industrial practices</h3>
+          <p>
+            Proper industrial practices are critical for addressing climate change, as industry is one of the largest contributors to greenhouse gas emissions.    </p>
+        </div>
+
+        <div class="task-3">
+          <img src="edu1.jpg" alt="icon1" />
+          <h3>Education Awareness</h3>
+          <p>
+            education and awareness are critical components of efforts to address climate change. By raising awareness of the issue, promoting sustainable behaviors, promoting renewable energy.<br>
+           
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="common-section" id="section-four">
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Resources</h2>
+        <p >
+         1. United States Environmental Protection Agency (EPA) - Climate Change: The EPA provides a range of information on climate change, including its causes, impacts, and what people can do to reduce greenhouse gas emissions. They also provide resources for educators and students.
+         Link: <a href="https://www.epa.gov/climate-change" style="color:#0077b5;">https://www.epa.gov/climate-change </a>
+         <br><br>
+       <br><br><br>
+        </p>
+        <p>
+            <br><br>
+            2.	    UK Government - Climate Change: The UK Government provides information on their strategy for tackling climate change, including their targets and progress towards meeting them. They also provide resources for individuals and businesses to reduce their carbon footprint.
+
+            Link: <a href="https://www.gov.uk/government/policies/climate-change" style="color:#0077b5;">https://www.gov.uk/government/policies/climate-change </a>  
+       <br>
+     </p>
+        <!--<p>
+           
+            <br><br>
+            3.	National Portal of India: The National Portal of India is the official government portal for various info and services in India. Their website provides information on soil pollution, including guidelines, policies, and initiatives undertaken by the government of India to tackle soil pollution. Website link: <a href="https://www.india.gov.in/topics/environment/soil-pollution" style="color: #3e17db;">https://www.india.gov.in/topics/environment/soil-pollution</a> 
+        </p>-->
+        <!--<p>
+            <br><br><br>
+            <br>
+
+            <br><br>
+            4.	Food and Agriculture Organization (FAO): The FAO website <a href="http://www.fao.org "style="color: #1212d3;">(http://www.fao.org)</a> provides information on sustainable agricultural practices, including measures to prevent soil pollution, as well as resources on soil health and fertility.
+        </p>
+        <p>-->
+            <br>
+        </p>
+        <!-- <div class="button-group">
+          <button class="common-button">get started</button>
+          <button class="common-button-normal">how its work?</button>
+        </div> -->
+      </div>
+
+      <!-- left side of section 2  -->
+      <div class="left-side">
+        <img src="resourcesclimate11.jpg" alt="section2" />
+      </div>
+    </section>
+
+  
+
+    <section class="common-section" id="section-five">
+      <!-- left side of section 2  -->
+      <div class="left-side">
+        <img src="LU.jpg" alt="section5"  style="width: 550px;"/>
+      </div>
+
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Latest update</h2>
+
+        <div class="fitness-goals">
+          <div class="rule1">
+            
+              <!--<i class="far fa-lightbulb"></i> -->  
+              <p>
+                1.	CNN Climate Change: <a href="https://www.cnn.com/specials/world/climate" style="color:#00aced;">https://www.cnn.com/specials/world/climate</a>
+                <br>
+                2.	BBC Climate: <a href="https://www.bbc.com/news/science-environment-54114533" style="color:#0077b5;">https://www.bbc.com/news/science-environment-54114533</a>
+<br>
+                3.	NBC News Climate Change: <a href="https://www.nbcnews.com/climate-change" style="color:#0077b5;">https://www.nbcnews.com/climate-change</a>
+<br>
+                4.	Al Jazeera Climate Change:<a href="https://www.aljazeera.com/tag/climate-change/" style="color:#0077b5;">https://www.aljazeera.com/tag/climate-change/</a>
+<br>
+                5.	The Guardian Climate Change: <a href="https://www.theguardian.com/environment/climate-crisis" style="color: #0077b5;">https://www.theguardian.com/environment/climate-crisis</a>
+<br>
+                6.	CBS News Climate Change: <a href="https://www.cbsnews.com/climate-change/" style="color:#0077b5;">https://www.cbsnews.com/climate-change/</a>
+<br>
+                7.	ABC News Climate Change: <a href="https://abcnews.go.com/International/climate-change" style="color: #0077b5;">https://abcnews.go.com/International/climate-change</a>
+<br>
+                8.	Reuters Climate Change: <a href="https://www.reuters.com/news/environment/climate-change" style="color:#0077b5;">https://www.reuters.com/news/environment/climate-change</a>
+                <br>
+                9.	Fox News Climate Change: <a href="https://www.foxnews.com/category/science/climate-change" style="color:#0077b5;">https://www.foxnews.com/category/science/climate-change</a>
+<br>
+                10.	PBS NewsHour Climate Change: <a href="https://www.pbs.org/newshour/tag/climate-change" style="color:#0077b5;">https://www.pbs.org/newshour/tag/climate-change</a>
+                
+                
+              </p>
+          
+            <!--<p>
+                The Forest Conservation Act 1980 was enacted to help conserve the country's forests. It strictly restricts and regulates the de-reservation of forests or use of forest land for non-forest purposes without the prior approval of Central Government.
+              <a href="https://economictimes.indiatimes.com/topic/soil-pollution" style="color: #150ee4;">click here</a>    
+              
+            </p>
+          </div>
+
+          <div class="rule2">
+            <h3>
+              <i class="far fa-lightbulb"></i>Agriculture related news update
+            </h3>
+            <p>
+                
+                Agriculture and livestock activities pollute soil through excessive application of pesticides and fertilizers, the use of untreated wastewater for irrigation, and the use of manure and sewage sludge with high antibiotic, antimicrobial-resistant bacteria and heavy metal content.
+            <a href="https://timesofindia.indiatimes.com/topic/soil-pollution/news" style="color: #1212d3;">https://timesofindia.indiatimes.com/topic/soil-pollution/news</a>
+            </p>
+          </div>-->
+
+          <!-- <div class="rule3">
+            <h3>
+              <i class="far fa-lightbulb"></i> Use cover crops
+            </h3>
+            <p>
+              Cover crops, such as clover or rye, can improve soil health by protecting the soil from erosion, suppressing weeds, and adding organic matter. Plant cover crops during the off-season to help improve soil health and prepare for the next growing season.
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------- our 6th section start 
+        ---------------------------------------------------------------------- -->
+
+    <footer>
+      <div class="logo-div">
+        <img src="logo12.webp" alt="logo"  />
+        <p>@K22EA 25/26/27 </p>
+        <p>All Right Reserved </p>
+        
+      </div>
+
+      <div class="footer-menu">
+        <!-- <div class="footer-div-2">
+          <h4>signup</h4>
+          <a href="#"><li>Login</li></a>
+          <a href="#"><li>FAQ</li></a>
+        </div> -->
+
+        <!-- <div class="footer-div-3">
+          <h4>INFO</h4>
+          <a href="#section-two"><li>About us</li></a>
+          <a href="#"><li>Articles</li></a>
+        </div> -->
+
+        <!-- <div class="footer-div-4">
+          <h4>Blogs</h4>
+          <a href="#"><li>Insight</li></a>
+          <a href="#"><li>Narrative</li></a>
+        </div> -->
+
+        <div class="footer-div-5">
+          <h4>Rohit Kumar</h4>
+          <a href="#" ><li>12215108</li></a>
+          
+          
+        </div>
+        <div class="footer-div-5">
+            <h4>Himanshu Sharma</h4>
+            <a href="#"><li>12215094</li></a>
+            
+            <!-- <a href="#"><li>We'll love to help you</li></a> -->
+          </div> <div class="footer-div-5">
+            <h4>Varun Pratap Singh</h4>
+            <a href="#"><li>12215686</li></a>
+            
+            <!-- <a href="#"><li>We'll love to help you</li></a> -->
+          <!-- </div> <div class="footer-div-5">
+            <h4>Resources</h4>
+            <a href="https://www.unep.org"><li>United Nations Environments Programme (UNEP)</li></a>
+            
+            <a href="#"><li>We'll love to help you</li></a> -->
+          </div> 
+          <!-- <div class="footer-div-5">
+            <h4>Resources</h4>
+            <a href="https://www.unep.org"><li>United Nations Environments Programme (UNEP)</li></a>
+            
+             <a href="#"><li>We'll love to help you</li></a> 
+          </div> -->
+      </div>
+    </footer>
+
+    <!-- ----------------------------- our 7th section  social media start 
+        ---------------------------------------------------------------------- -->
+
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/unep" class="facebook" target="KOCFZ">
+        click here to visit <i class="fab fa-facebook-square"></i>
+      </a>
+
+        <a
+        href="https://www.instagram.com/unep/?hl=en"
+        class="instagram"
+        target="KOCFZ"
+      >
+        click here to visit <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/company/unep/?trk=public_profile_volunteering-position_result-card_full-click&originalSubdomain=bd" class="linkedin" target="KOCFZ">
+        click here to visit <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://youtu.be/wHcY-iFSYZM"
+        class="youtube"
+        target="_KOCFZ"
+      >
+        click here to visit <i class="fab fa-youtube-square"></i>
+      </a>
+    </div>
+  </body>
+  <script type="text/javascript">
+    document.getElementById("abcd1").onclick = function () {
+        location.href = "impact.pdf";
+    };
+</script> 
+<script type="text/javascript">
+    document.getElementById("abcd").onclick = function () {
+        location.href = "Causes of Climate Change.pdf";
+    };
+</script> 
+</html>
